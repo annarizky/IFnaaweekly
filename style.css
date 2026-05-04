@@ -1,0 +1,65 @@
+body {
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(to right, #ff99caa2, #ffd5ef);
+  padding: 20px;
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+
+/* Navbar (table) */
+table {
+  margin: 20px auto; /* bikin ke tengah */
+  border-collapse: collapse;
+  background-color: #ffb6d3;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+td {
+  padding: 12px 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Link navbar */
+td a {
+  text-decoration: none;
+  color: #880e4f;
+  font-weight: bold;
+}
+
+/* Hover efek */
+td:hover {
+  background-color: #d63384;
+}
+
+td:hover a {
+  color: white;
+}
+
+/* Konten */
+h3 {
+  margin-top: 30px;
+  color: #c2185b;
+}
+
+p {
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+/* Box konten */
+.content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
