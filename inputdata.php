@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,12 @@
         <table border="1" cellspacing="0" cellpadding="10px">
             <tr>
                 <th>
-                    <a href="index.html">Home</a></th>
+                    <a href="index.php">Home</a></th>
                 <th>
-                    <a href="profile.html"> Profile</a></th>
+                    <a href="profile.php"> Profile</a></th>
                 <th>
-                    <a href="kontak.html">Contact</a></th>
-                <th> <a href="mahasiswa.html">Data Mahasiswa</a></th>
+                    <a href="kontak.php">Contact</a></th>
+                <th> <a href="mahasiswa.php">Data Mahasiswa</a></th>
             </tr>
         </table>
         <h2>Input Data Mahasiswa</h2>
@@ -154,4 +154,4 @@
         <input type="submit" name="submit" value="Submit"> 
         </form> 
 </body>
-</html>
+</php>
