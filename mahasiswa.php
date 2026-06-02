@@ -1,5 +1,13 @@
-<!DOCTYPE php>
-<php lang="en">
+<?php
+    $koneksi = mysqli_connect("localhost", "root", "", "ifnaaweekly");
+    $query = "SELECT * FROM mahasiswa";
+    $result = mysqli_query($koneksi, $query);
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,55 +49,28 @@
                 <!-- <th> baris 1, kolom 2</th> -->
             </tr>
 
+            <?php
+            while ($mhs = mysqli_fetch_row($result))
+                {
+            ?>
+            
             <tr>
-                <td align="center">1</td>
-                <td>Annarizky Nifa Diana Putri</td>
-                <td align="center">13182420110</td>
-                <td align="center">Informatika</td>
-                 <td align="center">annarizkynifa@gmail.com</td>
-                <td align="center">085740361320</td>
-                <td><img src="assets/image/WINTER.jpg" width="70px"></td>
-            </tr>
-
-            <tr>
-                <td align="center">1</td>
-                <td>Daniel Caesar</td>
-                <td align="center">13182420105</td>
-                <td align="center">Informatika</td>
-                 <td align="center">danielalways@gmail.com</td>
-                <td align="center">0857403615880</td>
-                 <td><img src="assets/image/kono.jpg" width="70px" ></td>
-            </tr>
+                <td align="center"><?= $mhs[0]?></td>
+                <td><?php echo $mhs[1] ?></td>
+                <td align="center"><?= $mhs[2] ?></td>
+                <td align="center"><?= $mhs[3] ?></td>
+                <td align="center"><?= $mhs[4] ?></td>
+                <td ><?= $mhs[5] ?></td>
+                <td><img src="assets/image/<?= $mhs[6] ?>" width="70px"></td>
             <td>
-                <a href="ubahdata.php"><button>edit<button></a | <a href="ubahdata.php"><button>hapus<button></a 
+                <a href="ubahdata.php" stlye=""><button>Edit</button></a> 
+                <a href="hapusdata.php" ><button>Hapus</button></a>
             </td>
+            </tr>
+            <?php
+            }
+            ?>
         </table>
 
-        <hr>
-         <table border="1" cellspacing="0" cellpadding="15px">
-            <tr>
-                <th>1.1</th>
-                <th>1.2</th>
-                <th>1.3</th>
-                <th>1.4</th>
-            </tr>
-
-            <tr>
-               <th>2.1</th> 
-               <th  >?</th>
-               <th>2.4</th>
-            </tr>
-
-            <tr>
-                <th>3.1</th>
-                <th>3.4</th>
-            </tr>
-
-            <tr>
-                <th>4.1</th>
-                <th>4.2</th>
-                <th>4.3</th>
-                <th>4.4</th>
-            </tr>
 </body>
-</php>
+</html>
