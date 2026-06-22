@@ -13,7 +13,7 @@ require 'fungsi.php';
     else
     {
          echo "<script>
-            alert ('Data Gagal Dihapus ');
+            alert ('Data Gagal Dihapus');
             window.location.href='mahasiswa.php';
             </script>";
 
